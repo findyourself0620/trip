@@ -39,7 +39,7 @@ export const guanziling: TripData = {
     day1: {
       id: "day1",
       title: "Day 1：溫泉與古剎巡禮",
-      date: "2026/01/24",
+      date: "2026/01/04",
       themeColor: "text-orange-600",
       routeColor: "border-orange-300",
       items: [
@@ -133,7 +133,7 @@ export const guanziling: TripData = {
     day2: {
       id: "day2",
       title: "Day 2：紅葉秘境與網美打卡",
-      date: "2026/01/25",
+      date: "2026/01/05",
       themeColor: "text-green-700",
       routeColor: "border-green-300",
       items: [
@@ -151,7 +151,7 @@ export const guanziling: TripData = {
         },
         {
           startTime: "11:20",
-          endTime: "12:30",
+          endTime: "12:00",
           type: "spot",
           icon: "Mountain",
           title: "紅葉公園",
