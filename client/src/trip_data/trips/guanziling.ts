@@ -21,7 +21,7 @@ export const guanziling: TripData = {
     },
     {
       title: "山林秘境",
-      desc: "落羽松、天空步道，吸收滿滿芬多精。",
+      desc: "紅葉秘境、天空步道，吸收滿滿芬多精。",
       icon: "Leaf",
       color: "green"
     }
@@ -44,8 +44,8 @@ export const guanziling: TripData = {
       routeColor: "border-orange-300",
       items: [
         {
-          startTime: "10:30",
-          endTime: "11:30",
+          startTime: "11:00",
+          endTime: "12:00",
           type: "transport",
           icon: "Car",
           title: "台南市區出發",
@@ -56,8 +56,8 @@ export const guanziling: TripData = {
           tags: []
         },
         {
-          startTime: "11:30",
-          endTime: "13:00",
+          startTime: "12:00",
+          endTime: "14:00",
           type: "food",
           icon: "Utensils",
           title: "七里香甕仔雞 (白河店)",
@@ -68,8 +68,8 @@ export const guanziling: TripData = {
           tags: ["#皮脆肉嫩", "#好停車"]
         },
         {
-          startTime: "13:15",
-          endTime: "13:40",
+          startTime: "14:15",
+          endTime: "14:40",
           type: "spot",
           icon: "Droplets",
           title: "水火同源",
@@ -80,8 +80,8 @@ export const guanziling: TripData = {
           tags: ["#奇景", "#蜜漬番茄"]
         },
         {
-          startTime: "13:40",
-          endTime: "14:20",
+          startTime: "15:00",
+          endTime: "15:30",
           type: "spot",
           icon: "Mountain",
           title: "火山碧雲寺",
@@ -92,12 +92,24 @@ export const guanziling: TripData = {
           tags: ["#夕陽", "#百年古剎"]
         },
         {
-          startTime: "14:20",
-          endTime: "18:00",
+          startTime: "15:30",
+          endTime: "16:00",
+          type: "spot",
+          icon: "Mountain",
+          title: "碧雲火泉步道",
+          desc: "關仔嶺碧雲寺-水火同源登山步道，登山初心者推薦",
+          location: "碧雲火泉步道",
+          mapUrl: "https://maps.app.goo.gl/os35tyQUfmzGWwcw5",
+          image: "https://images.unsplash.com/photo-1548504769-900b70ed122e?q=80&w=1000&auto=format&fit=crop",
+          tags: ["#芬多精", "#登山步道"]
+        },
+        {
+          startTime: "16:20",
+          endTime: "19:00",
           type: "stay",
           icon: "Home",
           title: "景大渡假莊園",
-          desc: "先寄放行李使用大眾池，17:00 後 Check-in。",
+          desc: "先 Check-in ，稍微休息一下後前往體驗大眾池。",
           highlight: "重要：務必攜帶泳衣泳帽！",
           location: "景大渡假莊園",
           mapUrl: "https://maps.app.goo.gl/itCBBFWdduwYiFi18",
@@ -105,29 +117,29 @@ export const guanziling: TripData = {
           tags: ["#泥漿溫泉", "#需泳衣"]
         },
         {
-          startTime: "18:00",
-          endTime: "19:30",
+          startTime: "19:00",
+          endTime: "20:30",
           type: "food",
           icon: "Utensils",
-          title: "竹香園甕缸雞",
-          desc: "必吃手剝雞、炸地瓜，享受山產美味。",
-          location: "竹香園甕缸雞",
-          mapUrl: "https://maps.app.goo.gl/jjPo4riAdAGvi5hL6",
+          title: "莊園晚餐",
+          desc: "好吃，但有點貴。",
+          location: "景大渡假莊園",
+          mapUrl: "https://maps.app.goo.gl/itCBBFWdduwYiFi18",
           image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1000&auto=format&fit=crop",
-          tags: ["#手剝雞", "#炸地瓜"]
+          tags: ["#白斬雞", "#合菜"]
         }
       ]
     },
     day2: {
       id: "day2",
-      title: "Day 2：山林秘境與網美打卡",
+      title: "Day 2：紅葉秘境與網美打卡",
       date: "2026/01/25",
       themeColor: "text-green-700",
       routeColor: "border-green-300",
       items: [
         {
-          startTime: "08:30",
-          endTime: "09:30",
+          startTime: "09:30",
+          endTime: "10:00",
           type: "food",
           icon: "Coffee",
           title: "莊園早餐",
@@ -138,8 +150,8 @@ export const guanziling: TripData = {
           tags: ["#自助式", "#景觀餐廳"]
         },
         {
-          startTime: "09:40",
-          endTime: "11:00",
+          startTime: "11:20",
+          endTime: "12:30",
           type: "spot",
           icon: "Mountain",
           title: "紅葉公園",
@@ -150,8 +162,8 @@ export const guanziling: TripData = {
           tags: ["#芬多精", "#紫斑蝶"]
         },
         {
-          startTime: "11:10",
-          endTime: "13:30",
+          startTime: "12:40",
+          endTime: "14:40",
           type: "food",
           icon: "Utensils",
           title: "174 翼騎士驛站",
@@ -163,32 +175,8 @@ export const guanziling: TripData = {
           alert: "山路蜿蜒，容易暈車者請先服用暈車藥"
         },
         {
-          startTime: "13:40",
-          endTime: "14:40",
-          type: "spot",
-          icon: "Camera",
-          title: "六甲落羽松森林",
-          desc: "冬季轉紅極美，非產季則是綠色森林隧道。",
-          location: "六甲落羽松森林",
-          mapUrl: "https://maps.app.goo.gl/PVxsNzz23b1sBuTJ6",
-          image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1000&auto=format&fit=crop",
-          tags: ["#落羽松", "#網美必拍"]
-        },
-        {
-          startTime: "14:50",
-          endTime: "15:50",
-          type: "spot",
-          icon: "Info",
-          title: "官田遊客中心 (西拉雅)",
-          desc: "梅花鹿地景藝術、大草原、現代建築。",
-          location: "官田遊客中心",
-          mapUrl: "https://maps.app.goo.gl/LZeq1k52bUWiv8RT6",
-          image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1000&auto=format&fit=crop",
-          tags: ["#梅花鹿", "#大草原"]
-        },
-        {
-          startTime: "16:00",
-          endTime: "17:00",
+          startTime: "14:40",
+          endTime: "15:40",
           type: "transport",
           icon: "Car",
           title: "返程",
