@@ -18,10 +18,8 @@ export function LandingPage() {
       <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-10">
         <div className="max-w-md mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">
-              T
-            </div>
-            <h1 className="text-xl font-bold text-foreground tracking-tight">Travel Tainan</h1>
+            <img src="/images/logo.webp" alt="Logo" className="w-8 h-8 rounded-lg object-cover" />
+            <h1 className="text-xl font-bold text-foreground tracking-tight">Trip。Findurself</h1>
           </div>
         </div>
       </header>
@@ -33,8 +31,8 @@ export function LandingPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8"
         >
-          <h2 className="text-3xl font-bold text-foreground mb-2">探索台南之美</h2>
-          <p className="text-muted-foreground">精選在地深度旅遊行程，帶您體驗不一樣的府城風情。</p>
+          <h2 className="text-3xl font-bold text-foreground mb-2">找自己 · 旅程紀錄</h2>
+          <p className="text-muted-foreground">每一次的出發，都是為了遇見更好的自己。紀錄我們共同走過的風景與回憶。</p>
         </motion.div>
 
         {/* Activity List */}
