@@ -15,7 +15,7 @@ export function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 font-sans">
       {/* Header */}
-      <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-10">
+      <header className="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-40">
         <div className="max-w-md mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img src="/images/logo.webp" alt="Logo" className="w-8 h-8 rounded-lg object-cover" />
@@ -39,7 +39,7 @@ export function LandingPage() {
         <div className="space-y-6">
           {activities.map((activity, index) => {
             const Icon = iconMap[activity.cardIcon] || Mountain;
-            
+
             return (
               <motion.div
                 key={activity.id}
@@ -52,8 +52,8 @@ export function LandingPage() {
                     {/* Image Area */}
                     <div className="relative h-48 overflow-hidden">
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10" />
-                      <img 
-                        src={activity.heroImage} 
+                      <img
+                        src={activity.heroImage}
                         alt={activity.title}
                         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                       />
