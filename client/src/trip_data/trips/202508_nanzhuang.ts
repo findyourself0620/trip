@@ -76,7 +76,7 @@ export const nanzhuang_202508: TripData = {
                     location: "353苗栗縣南庄鄉中正路1巷6號",
                     mapUrl: "https://maps.app.goo.gl/YiaXyD4vY1GiYDZQ8",
                     image: "https://images.unsplash.com/photo-1612927601601-6638404737ce?q=80&w=1000&auto=format&fit=crop",
-                    tags: ["#客家美食", "#排隊名店"]
+                    tags: ["#客家美食", "#在地小吃"]
                 },
                 {
                     startTime: "13:10",
@@ -112,7 +112,7 @@ export const nanzhuang_202508: TripData = {
                     location: "苗栗縣南庄鄉東河村5鄰78號",
                     mapUrl: "https://maps.app.goo.gl/U6JUsy7DU397vDmB8",
                     image: "https://images.unsplash.com/photo-1584674751368-2d2c20698188?q=80&w=1000&auto=format&fit=crop",
-                    tags: ["#歷史建築", "#拍照"]
+                    tags: ["#歷史建築", "#在地文化"]
                 },
                 {
                     startTime: "17:40",
