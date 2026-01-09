@@ -1,7 +1,7 @@
 import { TripData } from '@/lib/types';
 
-export const guanziling: TripData = {
-  id: "202601_guanziling",
+export const guanziling_202601: TripData = {
+  id: "guanziling_202601",
   title: "關子嶺漫遊",
   subtitle: "2天1夜 · 深度放鬆之旅",
   description: "世界三大泥漿溫泉之一，結合山林秘境與在地美食的療癒行程。",
