@@ -3,7 +3,7 @@ import { TripData } from '@/lib/types';
 export const nanzhuang_202508: TripData = {
     id: "nanzhuang_202508",
     title: "南庄小旅行",
-    subtitle: "慢活山城 · 客家風情",
+    subtitle: "2天1夜 · 客家風情",
     description: "走進南庄老街的桂花巷，感受客家山城的質樸與熱情，探訪神仙谷的壯麗瀑布，享受兩天一夜的慢活時光。",
     heroImage: "images/nanzhuang_hero.webp",
     cardIcon: "Mountain",
