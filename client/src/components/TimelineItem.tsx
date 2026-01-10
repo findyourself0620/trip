@@ -59,7 +59,7 @@ export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineI
   };
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
@@ -78,7 +78,7 @@ export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineI
           "w-10 h-10 rounded-2xl flex items-center justify-center shadow-md z-10 transition-transform duration-300 group-hover:scale-110",
           getTypeColor(item.type)
         )}>
-            <IconComponent size={20} />
+          <IconComponent size={20} />
         </div>
         {!isLast && (
           <div className={cn(
@@ -91,16 +91,16 @@ export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineI
       {/* Content Card */}
       <div className="flex-1 pb-8">
         <div className="glass-card p-5 rounded-2xl relative overflow-hidden group-hover:shadow-lg transition-all duration-300 border-l-4 border-l-transparent hover:border-l-primary/50">
-          
+
           <div className="flex justify-between items-start mb-2 relative z-10">
             <h3 className="font-bold text-lg text-foreground leading-tight">{item.title}</h3>
-            
+
             {/* Action Buttons */}
             <div className="flex gap-2 flex-shrink-0 ml-2">
               {/* Map Button with Dialog */}
               <Dialog open={isMapOpen} onOpenChange={setIsMapOpen}>
                 <DialogTrigger asChild>
-                  <button 
+                  <button
                     className="text-primary bg-primary/10 p-2 rounded-full hover:bg-primary/20 transition-colors"
                     title="查看地圖"
                   >
@@ -120,16 +120,23 @@ export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineI
                   <div className="flex flex-col gap-4 py-4">
                     {item.image && (
                       <div className="w-full h-40 rounded-lg overflow-hidden mb-4">
-                        <img 
-                          src={item.image} 
-                          alt={item.title} 
+                        <img
+                          src={item.image}
+                          alt={item.title}
                           className="w-full h-full object-cover"
                         />
                       </div>
                     )}
                     <div className="bg-muted/50 p-4 rounded-lg text-sm">
                       <p className="font-medium mb-1">景點介紹：</p>
-                      <p className="text-muted-foreground">{item.desc}</p>
+                      <p className="text-muted-foreground">
+                        {item.desc?.split(/<br\s*\/?>|\n/gi).map((line, i) => (
+                          <span key={i}>
+                            {line}
+                            {i < (item.desc?.split(/<br\s*\/?>|\n/gi).length || 0) - 1 && <br />}
+                          </span>
+                        ))}
+                      </p>
                     </div>
                   </div>
                   <div className="flex justify-end gap-2">
@@ -145,9 +152,16 @@ export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineI
               </Dialog>
             </div>
           </div>
-          
-          <p className="text-muted-foreground text-sm mb-3 leading-relaxed">{item.desc}</p>
-          
+
+          <p className="text-muted-foreground text-sm mb-3 leading-relaxed">
+            {item.desc?.split(/<br\s*\/?>|\n/gi).map((line, i) => (
+              <span key={i}>
+                {line}
+                {i < (item.desc?.split(/<br\s*\/?>|\n/gi).length || 0) - 1 && <br />}
+              </span>
+            ))}
+          </p>
+
           {item.highlight && (
             <div className="bg-destructive/5 text-destructive text-sm px-3 py-2 rounded-lg mb-3 flex items-start border border-destructive/10">
               <AlertCircle size={16} className="mt-0.5 mr-2 flex-shrink-0" />
@@ -155,7 +169,7 @@ export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineI
             </div>
           )}
 
-           {item.alert && (
+          {item.alert && (
             <div className="bg-yellow-500/10 text-yellow-700 dark:text-yellow-400 text-sm px-3 py-2 rounded-lg mb-3 flex items-start border border-yellow-500/20">
               <AlertCircle size={16} className="mt-0.5 mr-2 flex-shrink-0" />
               <span>{item.alert}</span>
