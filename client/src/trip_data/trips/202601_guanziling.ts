@@ -5,7 +5,7 @@ export const guanziling_202601: TripData = {
   title: "關子嶺漫遊",
   subtitle: "2天1夜 · 深度放鬆之旅",
   description: "世界三大泥漿溫泉之一，結合山林秘境與在地美食的療癒行程。",
-  heroImage: "images/hero_onsen.jpg",
+  heroImage: "images/guanziling_hero.webp",
   cardIcon: "Mountain",
   cardColor: "bg-orange-500",
   location: "台南 - 關子嶺",
@@ -35,7 +35,7 @@ export const guanziling_202601: TripData = {
   checklist: [
     { id: "1", text: "泳衣、泳帽 (景大溫泉必備)", category: "衣物", important: true, checked: false },
     { id: "2", text: "換洗衣物 (2天1夜)", category: "衣物", important: false, checked: false },
-    { id: "3", text: "暈車藥 (前往174縣道山路)", category: "用品", important: true, checked: false },
+    { id: "3", text: "暈車藥（山路多）", category: "用品", important: true, checked: false },
     { id: "4", text: "行動電源 & 充電線", category: "電子", important: false, checked: false },
     { id: "5", text: "輕便雨具/遮陽傘", category: "用品", important: false, checked: false },
     { id: "6", text: "防蚊液 (戶外景點多)", category: "用品", important: false, checked: false },
@@ -56,9 +56,9 @@ export const guanziling_202601: TripData = {
           icon: "Car",
           title: "台南市區出發",
           desc: "預計行車時間 50分 - 1小時，保持愉快心情出發！",
-          location: "台南市",
+          location: "台南市東區北門路二段4號",
           mapUrl: "https://maps.app.goo.gl/J5kAy4mE9wNbf4NBA",
-          image: "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_tainan_station.webp",
           tags: []
         },
         {
@@ -68,9 +68,9 @@ export const guanziling_202601: TripData = {
           icon: "Utensils",
           title: "七里香甕仔雞 (白河店)",
           desc: "皮脆肉嫩的甕仔雞，停車方便。",
-          location: "七里香甕仔雞白河店",
+          location: "台南市白河區木屐寮26之5號",
           mapUrl: "https://maps.app.goo.gl/ovEtKLUkvLBF8JFGA",
-          image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_day1_launch.webp",
           tags: ["#皮脆肉嫩", "#好停車"]
         },
         {
@@ -80,9 +80,9 @@ export const guanziling_202601: TripData = {
           icon: "Droplets",
           title: "水火同源",
           desc: "觀賞壁崖上水火共存奇景，推薦順手買包蜜漬番茄。",
-          location: "水火同源",
+          location: "台南市白河區關嶺里18號",
           mapUrl: "https://maps.app.goo.gl/L19LHJUCESH3uYmr7",
-          image: "https://images.unsplash.com/photo-1544965838-54ef8406f868?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_fire_water_cave.webp",
           tags: ["#奇景", "#蜜漬番茄"]
         },
         {
@@ -92,9 +92,9 @@ export const guanziling_202601: TripData = {
           icon: "Mountain",
           title: "火山碧雲寺",
           desc: "百年古剎，俯瞰嘉南平原，有電梯可達觀景台。",
-          location: "火山碧雲寺",
+          location: "台南市白河區仙草里火山路1號",
           mapUrl: "https://maps.app.goo.gl/YzoE89SFMzMVdBvf7",
-          image: "https://images.unsplash.com/photo-1548504769-900b70ed122e?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_biyun_temple.webp",
           tags: ["#夕陽", "#百年古剎"]
         },
         {
@@ -104,9 +104,9 @@ export const guanziling_202601: TripData = {
           icon: "Mountain",
           title: "碧雲火泉步道",
           desc: "關仔嶺碧雲寺-水火同源登山步道，登山初心者推薦",
-          location: "碧雲火泉步道",
+          location: "台南市白河區仙草里火山路1號",
           mapUrl: "https://maps.app.goo.gl/os35tyQUfmzGWwcw5",
-          image: "https://images.unsplash.com/photo-1548504769-900b70ed122e?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_biyun_trail.webp",
           tags: ["#芬多精", "#登山步道"]
         },
         {
@@ -117,9 +117,9 @@ export const guanziling_202601: TripData = {
           title: "景大渡假莊園",
           desc: "先 Check-in ，稍微休息一下後前往體驗大眾池。",
           highlight: "重要：務必攜帶泳衣泳帽！",
-          location: "景大渡假莊園",
+          location: "台南市白河區關子嶺56號",
           mapUrl: "https://maps.app.goo.gl/itCBBFWdduwYiFi18",
-          image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_joy_day_villa.webp",
           tags: ["#泥漿溫泉", "#需泳衣"]
         },
         {
@@ -129,9 +129,9 @@ export const guanziling_202601: TripData = {
           icon: "Utensils",
           title: "莊園晚餐",
           desc: "好吃，但有點貴。",
-          location: "景大渡假莊園",
+          location: "台南市白河區關子嶺56號",
           mapUrl: "https://maps.app.goo.gl/itCBBFWdduwYiFi18",
-          image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_joy_day_villa.webp",
           tags: ["#白斬雞", "#合菜"]
         }
       ]
@@ -150,9 +150,9 @@ export const guanziling_202601: TripData = {
           icon: "Coffee",
           title: "莊園早餐",
           desc: "享受莊園提供的豐盛早餐，補充一天活力。",
-          location: "景大渡假莊園",
+          location: "台南市白河區關子嶺56號",
           mapUrl: "https://maps.app.goo.gl/itCBBFWdduwYiFi18",
-          image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_joy_day_villa.webp",
           tags: ["#自助式", "#景觀餐廳"]
         },
         {
@@ -162,9 +162,9 @@ export const guanziling_202601: TripData = {
           icon: "Mountain",
           title: "紅葉公園",
           desc: "散步吸收芬多精，欣賞紫斑蝶生態。",
-          location: "紅葉公園",
+          location: "台南市白河區關仔嶺溫泉區",
           mapUrl: "https://maps.app.goo.gl/Lb3P7NEDuTaeRs8v5",
-          image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_maple_park.webp",
           tags: ["#芬多精", "#紫斑蝶"]
         },
         {
@@ -174,9 +174,9 @@ export const guanziling_202601: TripData = {
           icon: "Utensils",
           title: "174 翼騎士驛站",
           desc: "預約制玻璃天空步道，無敵山景。",
-          location: "174翼騎士驛站",
+          location: "台南市東山區南勢里南勢庄42-1號",
           mapUrl: "https://maps.app.goo.gl/9UQWNXS6mWJ1m4yT7",
-          image: "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_174_cafe.webp",
           tags: ["#天空步道", "#預約制"],
           alert: "山路蜿蜒，容易暈車者請先服用暈車藥"
         },
@@ -187,9 +187,9 @@ export const guanziling_202601: TripData = {
           icon: "Car",
           title: "返程",
           desc: "返回台南市區，結束兩天一夜的美好旅程。",
-          location: "台南市",
+          location: "臺南市東區北門路二段4號",
           mapUrl: "https://maps.app.goo.gl/J5kAy4mE9wNbf4NBA",
-          image: "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1000&auto=format&fit=crop",
+          image: "images/guanziling_tainan_station.webp",
           tags: []
         }
       ]

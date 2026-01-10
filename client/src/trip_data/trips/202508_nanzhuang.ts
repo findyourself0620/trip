@@ -79,7 +79,7 @@ export const nanzhuang_202508: TripData = {
                     icon: "Utensils",
                     title: "椿也外省麵",
                     desc: "南庄老街吃午餐",
-                    location: "353苗栗縣南庄鄉中正路1巷6號",
+                    location: "苗栗縣南庄鄉中正路1巷6號",
                     mapUrl: "https://maps.app.goo.gl/YiaXyD4vY1GiYDZQ8",
                     image: "images/nanzhuang_day1_launch.webp",
                     tags: ["#客家美食", "#在地小吃"]
