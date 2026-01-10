@@ -1,4 +1,4 @@
-import { Navigation, AlertCircle, MapPin, Utensils, Home, Mountain, Droplets, Car } from 'lucide-react';
+import { Navigation, AlertCircle, MapPin, Utensils, Home, Mountain, Droplets, Car, Coffee } from 'lucide-react';
 import { ItineraryItem } from '@/lib/types';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
@@ -21,6 +21,7 @@ interface TimelineItemProps {
   routeColor: string;
   index: number;
   day: string;
+  themeColor: string;
 }
 
 const iconMap: Record<string, any> = {
@@ -29,14 +30,27 @@ const iconMap: Record<string, any> = {
   Mountain,
   Droplets,
   Car,
+  Coffee,
   Navigation, // Fallback or used elsewhere
   MapPin
 };
 
-export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineItemProps) {
+export function TimelineItem({ item, isLast, routeColor, index, day, themeColor }: TimelineItemProps) {
   const { itinerary } = useApp();
   const IconComponent = iconMap[item.icon] || MapPin;
   const [isMapOpen, setIsMapOpen] = useState(false);
+
+  const getHoverBorderColor = (type: string) => {
+    switch (type) {
+      case 'food': return 'hover:border-l-chart-1/50';
+      case 'spot': return 'hover:border-l-chart-2/50';
+      case 'stay': return 'hover:border-l-chart-3/50';
+      case 'transport': return 'hover:border-l-chart-4/50';
+      default: return 'hover:border-l-gray-500/50';
+    }
+  };
+
+  const hoverBorderColor = getHoverBorderColor(item.type);
 
   const openGoogleMaps = () => {
     // Strictly use the explicit mapUrl from data.ts
@@ -90,7 +104,10 @@ export function TimelineItem({ item, isLast, routeColor, index, day }: TimelineI
 
       {/* Content Card */}
       <div className="flex-1 pb-8">
-        <div className="glass-card p-5 rounded-2xl relative overflow-hidden group-hover:shadow-lg transition-all duration-300 border-l-4 border-l-transparent hover:border-l-primary/50">
+        <div className={cn(
+          "glass-card p-5 rounded-2xl relative overflow-hidden group-hover:shadow-lg transition-all duration-300 border-l-4 border-l-transparent",
+          hoverBorderColor
+        )}>
 
           <div className="flex justify-between items-start mb-2 relative z-10">
             <h3 className="font-bold text-lg text-foreground leading-tight">{item.title}</h3>

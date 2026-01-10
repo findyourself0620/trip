@@ -11,7 +11,7 @@ interface ItineraryViewProps {
 
 export function ItineraryView({ dayId }: ItineraryViewProps) {
   const { itinerary } = useApp();
-  
+
   if (!itinerary) return null;
 
   const dayData = itinerary.days[dayId];
@@ -19,9 +19,10 @@ export function ItineraryView({ dayId }: ItineraryViewProps) {
   if (!dayData) return null;
 
   const getIcon = () => {
+    const iconClass = cn("mr-2 w-5 h-5", dayData.themeColor);
     // Simple logic to alternate icons or pick based on day number
-    if (dayId === 'day1') return <Sun className="mr-2 w-5 h-5 text-orange-500" />;
-    return <Coffee className="mr-2 w-5 h-5 text-green-600" />;
+    if (dayId === 'day1') return <Sun className={iconClass} />;
+    return <Coffee className={iconClass} />;
   };
 
   const getTimeRange = () => {
@@ -48,7 +49,7 @@ export function ItineraryView({ dayId }: ItineraryViewProps) {
               {getIcon()} {getTimeRange()}
             </span>
           </div>
-          <h2 className="text-2xl font-bold text-foreground font-serif">{dayData.title}</h2>
+          <h2 className={cn("text-2xl font-bold font-serif", dayData.themeColor)}>{dayData.title}</h2>
         </motion.div>
       </div>
 
@@ -56,19 +57,20 @@ export function ItineraryView({ dayId }: ItineraryViewProps) {
       <div className="p-4 pb-24 pt-6">
         <div className="space-y-0">
           {dayData.items.map((item: ItineraryItem, index: number) => (
-            <TimelineItem 
-              key={`${dayId}-${index}`} 
-              item={item} 
-              isLast={index === dayData.items.length - 1} 
+            <TimelineItem
+              key={`${dayId}-${index}`}
+              item={item}
+              isLast={index === dayData.items.length - 1}
               routeColor={dayData.routeColor}
               index={index}
               day={dayId}
+              themeColor={dayData.themeColor}
             />
           ))}
         </div>
-        
+
         {/* End of Day Marker */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
@@ -76,7 +78,7 @@ export function ItineraryView({ dayId }: ItineraryViewProps) {
         >
           <div className="flex items-center text-muted-foreground text-xs tracking-widest uppercase">
             <span className="w-8 h-[1px] bg-border mr-2"></span>
-            <Moon size={12} className="mr-2" /> 
+            <Moon size={12} className="mr-2" />
             End of {dayData.date}
             <span className="w-8 h-[1px] bg-border ml-2"></span>
           </div>

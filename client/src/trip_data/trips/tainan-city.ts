@@ -8,8 +8,14 @@ export const tainanCity: TripData = {
   heroImage: "https://images.unsplash.com/photo-1552993873-0dd1110e025f?q=80&w=1000&auto=format&fit=crop",
   cardIcon: "Building2",
   cardColor: "bg-red-500",
+  location: "台南 - 市區",
   dateRange: "待定",
   config: {},
+  summary: [
+    "赤崁樓",
+    "孔廟文化園區",
+    "國華街美食"
+  ],
   highlights: [
     {
       title: "古蹟巡禮",

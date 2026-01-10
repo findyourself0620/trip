@@ -38,12 +38,14 @@ export interface TripData {
   heroImage: string;
   cardIcon: string;
   cardColor: string;
+  location: string;
   dateRange: string;
   days: Record<string, DayItinerary>;
   checklist: ChecklistItem[];
   config: {
     albumUrl?: string;
   };
+  summary: string[];
   highlights: {
     title: string;
     desc: string;

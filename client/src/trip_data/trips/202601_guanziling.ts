@@ -8,10 +8,16 @@ export const guanziling_202601: TripData = {
   heroImage: "images/hero_onsen.jpg",
   cardIcon: "Mountain",
   cardColor: "bg-orange-500",
+  location: "台南 - 關子嶺",
   dateRange: "2026/1/3 ~ 2026/1/4",
   config: {
     albumUrl: "https://drive.google.com/drive/folders/1HH8_ZQdgX-msfn5KcCOuAdb74MhgQEI2"
   },
+  summary: [
+    "七里香甕仔雞 (白河店)",
+    "水火同源",
+    "火山碧雲寺"
+  ],
   highlights: [
     {
       title: "泥漿溫泉",

@@ -8,8 +8,14 @@ export const coastal: TripData = {
   heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
   cardIcon: "Palmtree",
   cardColor: "bg-blue-500",
+  location: "台南 - 濱海",
   dateRange: "待定",
   config: {},
+  summary: [
+    "四草綠色隧道",
+    "七股鹽山",
+    "井仔腳瓦盤鹽田"
+  ],
   highlights: [
     {
       title: "生態體驗",

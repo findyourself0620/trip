@@ -8,10 +8,16 @@ export const nanzhuang_202508: TripData = {
     heroImage: "images/nanzhuang_hero.webp",
     cardIcon: "Mountain",
     cardColor: "bg-orange-500",
+    location: "苗栗 - 南庄",
     dateRange: "2025/8/23 ~ 2025/8/24",
     config: {
         albumUrl: "https://drive.google.com/drive/folders/1Mn-cw6l5ogV7HHk9yPew61aCeQIE3AeP"
     },
+    summary: [
+        "南庄老街 (桂花巷)",
+        "神仙谷瀑布",
+        "窯烤麵包"
+    ],
     highlights: [
         {
             title: "客家美食",
